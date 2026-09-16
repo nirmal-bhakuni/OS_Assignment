@@ -49,12 +49,17 @@ Demonstrates synchronization when multiple processes compete for limited shared 
 ## 📁 Repository Structure
 
 ```text
-OS-Synchronization-Java/
+OS_Assignment/
 │
-├── ProducerConsumer.java
-├── ReaderWriter.java
-├── DiningPhilosophers.java
+├── .idea/
 │
+├── src/
+│   ├── ProducerConsumer.java
+│   ├── ReaderWriter.java
+│   └── DiningPhilosophers.java
+│
+├── .gitignore
+├── OS_Assignment.iml
 └── README.md
 ```
 
@@ -71,31 +76,31 @@ git clone <repository-url>
 ### 2. Navigate to the project
 
 ```bash
-cd OS-Synchronization-Java
+cd OS_Assignment
 ```
 
 ### 3. Compile a program
 
 ```bash
-javac ProducerConsumer.java
+javac src/ProducerConsumer.java
 ```
 
 ### 4. Run it
 
 ```bash
-java ProducerConsumer
+java -cp src ProducerConsumer
 ```
 
 Similarly:
 
 ```bash
-javac ReaderWriter.java
-java ReaderWriter
+javac src/ReaderWriter.java
+java -cp src ReaderWriter
 ```
 
 ```bash
-javac DiningPhilosophers.java
-java DiningPhilosophers
+javac src/DiningPhilosophers.java
+java -cp src DiningPhilosophers
 ```
 
 ## 🎯 Purpose
