@@ -16,8 +16,8 @@ public class ReaderWriter {
         w1.start();
         r1.start();
         r2.start();
-        r3.start();
         w2.start();
+        r3.start();
         r1.join();
         r2.join();
         r3.join();
@@ -59,7 +59,7 @@ class Writer extends Thread {
             ReaderWriter.rw.acquire();
             System.out.println("Writer " + Thread.currentThread().getName() + " START writing");
             ReaderWriter.data++;
-            Thread.sleep(5000);
+            Thread.sleep(4000);
             System.out.println("Writer " + Thread.currentThread().getName() + " END writing " + ReaderWriter.data);
             ReaderWriter.rw.release();
         } catch (InterruptedException e) {

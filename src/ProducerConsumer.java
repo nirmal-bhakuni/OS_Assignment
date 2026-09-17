@@ -1,6 +1,5 @@
 import java.util.concurrent.Semaphore;
 
-
 public class ProducerConsumer {
     static final int BUFFER_SIZE = 5;
     static int[] buffer = new int[BUFFER_SIZE];
